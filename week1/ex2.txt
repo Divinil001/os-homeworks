@@ -1,0 +1,30 @@
+  535  ls
+  536  nano some.txt
+  537  man wget
+  538  mkdir ~/week1
+  539  cd
+  540  cd ~/week1/
+  541  ls /usr/bin
+  542  man grep
+  543  grep gcc /usr/bin
+  544  ls /usr/bin
+  545  ls ~/usr/bin
+  546  ls /usr/bin | grep gcc
+  547  man touch
+  548  echo Hi | touch ex1.txt
+  549  cat Hi | touch ex1.txt
+  550  cat Hi > touch ex1.txt
+  551  cat Hi > ex1.txt
+  552  man cat
+  553  cat Hi ex1.txt
+  554  cat ex1.txt
+  555  cat ex1.txt Hi
+  556  man cat
+  557  ls /usr/bin | grep gcc
+  558  ls /usr/bin | grep gcc | cat > ex1.txt 
+  559  history
+  560  top history
+  561  man top
+  562  rm ex1.txt 
+  563  ls /usr/bin | grep gcc | sort -r | cat > ex1.txt 
+  564  history | tail -n 30 | cat > ex2.txt
