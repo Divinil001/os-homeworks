@@ -5,8 +5,6 @@ if [ $# -ne 2 ]; then
 	exit
 fi
 
-N=$2
-
 for ((i = 0; i < $2; i++)); do
-  echo `./$1`
+	echo `./$1`
 done
