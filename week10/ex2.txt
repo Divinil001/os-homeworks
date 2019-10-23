@@ -1,0 +1,17 @@
+1. Creating "file.txt" in "week01"
+egor@egor-laptop:~/Documents/os-homeworks/week01$ touch file.txt
+
+2. Creating a link to this file from "week10"
+egor@egor-laptop:~/Documents/os-homeworks/week10$ link ../week01/file.txt _ex2.txt
+
+3. Getting the i-node number of the "file.txt"
+egor@egor-laptop:~/Documents/os-homeworks/week10$ ls -i ../week01/file.txt
+11273054 ../week01/file.txt
+
+4. Tracing all links to the "file.txt" in the "os-homeworks"
+egor@egor-laptop:~/Documents/os-homeworks/week10$ find .. -inum 11273054
+../week10/_ex2.txt
+../week01/file.txt
+
+5. Removing all links from the "file.txt" in the "os-homeworks"
+egor@egor-laptop:~/Documents/os-homeworks/week10$ find .. -inum 11273054 -exec rm {} \;

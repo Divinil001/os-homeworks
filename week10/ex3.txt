@@ -1,0 +1,28 @@
+1. Creating a file "_ex3.txt"
+egor@egor-laptop:~/Documents/os-homeworks/week10$ touch _ex3.txt
+
+2. Removing execute permission for everybody
+egor@egor-laptop:~/Documents/os-homeworks/week10$ chmod -x _ex3.txt
+
+3.1. Granting all permissions to owner
+egor@egor-laptop:~/Documents/os-homeworks/week10$ chmod u=rwx _ex3.txt
+
+3.2. Granting all permissions to others
+egor@egor-laptop:~/Documents/os-homeworks/week10$ chmod o=rwx _ex3.txt
+
+3.3. Checking if everything is right
+egor@egor-laptop:~/Documents/os-homeworks/week10$ ls -l _ex3.txt 
+-rwxrw-rwx 1 egor egor 0 окт 24 01:16 _ex3.txt
+
+4.1. Granting group permissions equals to owner's
+egor@egor-laptop:~/Documents/os-homeworks/week10$ chmod g=u _ex3.txt 
+
+4.2. Checking if everything is right
+egor@egor-laptop:~/Documents/os-homeworks/week10$ ls -l _ex3.txt 
+-rwxrwxrwx 1 egor egor 0 окт 24 01:16 _ex3.txt
+
+5.
+660 == -rw-rw----
+775 == -rwxrwxr-x
+777 == -rwxrwxrwx
+(where first three for owner, next three for group, the last three for others)
