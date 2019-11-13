@@ -1,0 +1,3 @@
+Process 1 is in a deadlock
+Process 2 is in a deadlock
+(Counting from 1 to 5)
